@@ -1,0 +1,308 @@
+/* 1.
+相同名稱的class。比較前面的class會無作用，只會調用後面class的功能。
+*/
+
+.justify-content_start{
+     /*排列方式為橫向*/
+    display: flex;
+    /*開始排序位置從最左邊開始。不加上面的display，
+    會沒有作用*/
+    justify-content:start;
+    
+}
+
+.justify-content_end{
+    /*排列方式為橫向*/
+    display: flex;
+    /*開始排序位置從最右邊開始。不加上面的display，
+    會沒有作用*/
+    justify-content:end;
+}
+
+
+.container{
+    /*排列方式為橫向*/
+    display: flex;
+    /*開始排序位置從最左邊開始*/
+    justify-content:end;
+    /*平均等距排列*/
+    /* justify-content:space-between; */
+}
+
+.displayright_Justify-content-start {
+    display: flex;
+    justify-content:start;
+  }
+
+
+  .left-align{
+    text-align: left;
+    /* display: inline-block; */
+  }
+
+.right-align {
+    text-align: right;
+    /* display: inline-block; */
+  }
+
+  /*目前已知text-align: left對圖片位置沒甚麼作用*/
+  .displayFlex_left-align{
+    display: flex;
+
+    text-align: left;
+    /* display: inline-block; */
+  }
+
+  .displayFlex_right-align {
+    display: flex;
+
+    text-align: right;
+    /* display: inline-block; */
+  }
+
+
+  .right-align img {
+    display: inline-block;
+  }
+
+.image-container {
+    display: block;
+    overflow: hidden;
+  }
+
+.containerHorizontal{
+        /*排列方式為橫向*/
+        display: flex;
+}
+.containerHorizontalAndSpace-between{
+    /*排列方式為橫向*/
+    display: flex;
+    
+    /*平均等距排列*/
+    justify-content:space-between;
+    
+}
+
+.containerHorizontal > * {
+    flex-grow: 1;       /* 設置元素的flex-grow屬性為1，即佔用可用空間的比例為1:1 */
+}
+
+.containerHorizontalSpace-betweenAddLeftRightMargin20px{
+    /*排列方式為橫向*/
+    display: flex;
+    
+    /*平均等距排列*/
+    justify-content:space-between;
+    
+    margin-left: 20px;
+    margin-right: 20px;  
+}
+
+.containerHorizontalSpace-betweenAddLeftRightMargin300px{
+    /*排列方式為橫向*/
+    display: flex;
+    
+    /*平均等距排列*/
+    justify-content:space-between;
+    
+    margin-left: 300px;
+    margin-right: 300px;  
+}
+
+/*框線*/
+.containerHorizontalSpace_betweenAddLeftRightMargin200pxAddOPadding{
+    /*排列方式為橫向*/
+    display: flex;
+    
+    /*平均等距排列*/
+    justify-content:space-between;
+    
+    margin-left: 200px;
+    margin-right: 200px;  
+
+    /*加入2px粗的黑色實線方框*/
+    border: 2px solid rgb(49, 49, 49);
+    /*加入xxpx的內邊距，讓容器內容與邊框之間有間隔*/
+    padding: 50px;
+}
+
+/*加入2px粗的黑色實線方框*/
+/*border: 2px solid rgb(49, 49, 49);*/
+/*加入xxpx的內邊距，讓容器內容與邊框之間有間隔*/
+/*padding: 50px; */
+
+.containerVertical{
+    /*排列方式為橫向*/
+    /* display: flex; */
+    
+    /*平均等距排列*/
+    /* justify-content:space-between; */
+}
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(198, 43, 255);
+}
+
+.box1 {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    /*要顯示的內容，都會寫在Body 裏面*/
+    margin: 8px;
+}
+
+.box2 {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+
+.boxWidthAndHeight70pxBackground_Color_rgb000255255{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(0, 255, 225);
+}
+
+
+.boxRgb255000191 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 0, 191);
+}
+
+
+.boxT20230410{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(0, 255, 225);
+}
+
+.boxWidthAndHeight110pxBackground-Color-rgb0-255-255{
+    width: 110px;
+    height: 110px;
+    background-color: rgb(0, 255, 225);
+}
+
+.boxT20230410V002{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(0, 255, 225);
+}
+
+.boxWidthAndHeight70pxBackground-Color-rgb0-255-255{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(0, 255, 225);
+}
+
+
+/* width: calc(50%); /* 50% 的视窗宽度减去 10 像素的边距 *//*
+height: 200px;
+background-color: rgb(0, 255, 225); */
+.boxWidth100percentHeight300pxBackground-Color-rgb0-255-255
+{
+    width: 100%; /* 设置 Box 元素的宽度为视窗宽度的 50% */
+    height: 300px;
+    background-color: rgb(0, 255, 225);
+}
+
+/*<li>字串A</li>
+<p>字串B</p>
+字串A跟字串B如果這樣使用的話，中間都會有很遠的行間距。
+可以使用這個class消除行間距。
+*/
+.marginTop0px{
+    margin-top: 0px;
+}
+
+/*在上面空出空白空間*/
+.marginTop30px{
+    margin-top: 30px;
+}
+
+.marginTop50px{
+    margin-top: 50px;
+}
+
+.marginTop150px{
+    margin-top: 150px;
+}
+
+
+.marginTop80px{
+    margin-top: 80px;
+}
+
+/*在左邊空出空白空間*/
+.paddingLeft50px{
+    padding-left: 50px;
+}
+
+/*在右邊空出空白空間*/
+.paddingRight50px{
+    padding-right: 50px;
+}
+
+.banner{
+    width:400px;
+    height:400px;
+}
+
+.textSizeJustifyContentCenter{
+        /*排列方式為橫向*/
+        display: flex;
+        /*開始排序位置從中間邊開始。不加上面的display，
+        會沒有作用*/
+        justify-content:center;
+    
+    font-size: 32px; /* 设置文本大小为16像素 */
+}
+
+/*圖片顯示*/
+.background_sizeAddbackground_repeatAddBackground-sizeAddSideLength60pxImageV001 {
+    background-image: url("./dessert/Group 10.png");/*<<<*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/*圖片顯示*/
+.background-sizeAddbackground-repeatAddBackground-sizeAddSideLength200pxImageV002 {
+    background-image: url("./image/20211231_114557.jpg");/*<<<*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/*圖片顯示
+圓形圖。
+注意:圖片長寬比例需要1:1，不然會出現半圓的狀況。
+*/
+.background-sizeAddbackground-repeatAddBackground-sizeAddSideLength60pxAddborder_radiusAddImageV002 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url("./image/20211231_114557.jpg");/*<<<*/
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*依照網頁介面大小變化的方框*/
+.autoSizeBackground{
+    width: 80%; 
+    min-height: 800px; 
+    background-color: rgb(233, 233, 233); margin: auto;
+}
+
+/*重要:更改網頁預設邊框*/
+body{
+    margin: 0px;
+    padding: 0px;
+}
